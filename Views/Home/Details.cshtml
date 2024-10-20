@@ -1,0 +1,345 @@
+﻿@{
+
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+    </a>
+</div>
+
+<!-- Content Row -->
+<div class="row">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Earnings (Monthly)
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Earnings (Annual)
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            Tasks
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pending Requests Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Pending Requests
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h5 class="m-0 font-weight-bold text-primary">แบบฟอร์มยืนยันค่าการตรวจวัดมลพิษจากปล่องระบายแบบต่อเนื่อง
+                    (CEMs Online)</h5>
+            </div>
+            <div class="card-body" id="myDiv">
+                <div class="form-row">
+                    <h6 class="m-0 font-weight-bold text-primary">1. ข้อมูลทั่วไป</h6>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="factory_name">ชื่อโรงงาน</label>
+                        <input type="text" class="form-control" id="factory_name" placeholder="ชื่อโรงงาน">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="factory_number">เลขทะเบียน</label>
+                        <input type="text" class="form-control" id="factory_number" placeholder="เลขทะเบียน">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="factory_business">ประกอบกิจการ</label>
+                    <input type="text" class="form-control" id="factory_business" placeholder="ประกอบกิจการ">
+                </div>
+                <div class="form-group">
+                    <label for="factory_fuel_type">ประเภทของเชื้อเพลิง</label>
+                    <input type="text" class="form-control" id="factory_fuel_type" placeholder="ประเภทของเชื้อเพลิง">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="factory_location_number">ที่ตั้ง เลขที่</label>
+                        <input type="text" class="form-control" id="factory_location_number" placeholder="เลขที่">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="factory_location_moo">หมู่.</label>
+                        <input type="text" class="form-control" id="factory_location_moo" placeholder="หมู่">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="factory_location_soi">ซอย</label>
+                        <input type="text" class="form-control" id="factory_location_soi" placeholder="ซอย">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="factory_location_road">ถนน</label>
+                        <input type="text" class="form-control" id="factory_location_road" placeholder="ถนน">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="factory_location_subdistrict">ตำบล</label>
+                        <input type="text" class="form-control" id="factory_location_subdistrict" placeholder="ตำบล">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="factory_location_district">อำเภอ</label>
+                        <input type="text" class="form-control" id="factory_location_district"
+                            placeholder="ประเภทขอำเภอองเชื้อเพลิง">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="factory_location_province">จังหวัด</label>
+                        <input type="text" class="form-control" id="factory_location_province" placeholder="จังหวัด">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="factory_location_zipcode">ไปรษณีย์</label>
+                        <input type="text" class="form-control" id="factory_location_zipcode" placeholder="ไปรษณีย์">
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-row ">
+                    <h6 class="m-0 font-weight-bold text-primary">2. ข้อมูลของการติดตั้งระบบ CEMs</h6>
+                </div>
+                <div class="form-row mt-4">
+                    <div class="form-group col-md-6">
+                        <label for="factory_chimney_install">2.1 จำนวนปล่องรวมที่ต้องติดตั้ง จำนวน</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="factory_chimney_install"
+                                placeholder="จำนวนปล่องรวมที่ติดตั้งเสร็จเรียบร้อยแล้ว">
+                            <div class="input-group-append">
+                                <span class="input-group-text">ปล่อง</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="factory_chimney_finish">2.2 จำนวนปล่องรวมที่ติดตั้งเสร็จเรียบร้อยแล้ว จำนวน</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="factory_chimney_finish"
+                                placeholder="จำนวนปล่องรวมที่ติดตั้งเสร็จเรียบร้อยแล้ว">
+                            <div class="input-group-append">
+                                <span class="input-group-text">ปล่อง</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <div class="col-xl-12 col-lg-12 text-center">
+                <button type="button" class="btn btn-sm btn-primary pt-2 pr-4 pl-4"
+                    onclick="save_input();">บันทึก</button>
+            </div>
+
+        </div>
+ 
+
+    </div>
+</div>
+</div>
+
+
+
+@section Scripts {
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="~/js/demo/chart-area-demo.js"></script>
+<script src="~/js/demo/chart-pie-demo.js"></script>
+
+
+<script type="text/javascript">
+
+
+
+    function save_input() {
+
+        var factory_name = document.getElementById('factory_name').value;
+        var factory_number = document.getElementById('factory_number').value;
+        var factory_business = document.getElementById('factory_business').value;
+        var factory_fuel_type = document.getElementById('factory_fuel_type').value;
+        var factory_location_number = document.getElementById('factory_location_number').value;
+        var factory_location_moo = document.getElementById('factory_location_moo').value;
+        var factory_location_soi = document.getElementById('factory_location_soi').value;
+        var factory_location_road = document.getElementById('factory_location_road').value;
+        var factory_location_subdistrict = document.getElementById('factory_location_subdistrict').value;
+        var factory_location_district = document.getElementById('factory_location_district').value;
+        var factory_location_province = document.getElementById('factory_location_province').value;
+        var factory_location_zipcode = document.getElementById('factory_location_zipcode').value;
+        var factory_chimney_install = document.getElementById('factory_chimney_install').value;
+        var factory_chimney_finish = document.getElementById('factory_chimney_finish').value;
+
+        /*  var obj = {
+                      factory_form_id:0
+                      ,factory_name: factory_name
+                      ,factory_number: factory_number
+                      ,factory_business: factory_business
+                      ,factory_fuel_type: factory_fuel_type 
+                      ,factory_location_number: factory_location_number 
+                      ,factory_location_moo: factory_location_moo 
+                      ,factory_location_soi: factory_location_soi 
+                      ,factory_location_road: factory_location_road 
+                      ,factory_location_subdistrict: factory_location_subdistrict 
+                      ,factory_location_district: factory_location_district 
+                      ,factory_location_province: factory_location_province 
+                      ,factory_location_zipcode: factory_location_zipcode 
+                      ,factory_chimney_install: factory_chimney_install 
+                      ,factory_chimney_finish: factory_chimney_finish 
+
+
+                   }; */
+
+
+        let factoryCoordinatorDataArray  = [];
+        let factoryCEMInstallDataArray  = [];
+        let factoruMeasureDataArray  = [];
+
+        var factoryCoordinator = {
+                      id:0
+                      ,factory_form_id: 9
+                      ,name: factory_name
+                      ,position: factory_name
+                      ,tel: factory_name 
+                      ,mobile: factory_name 
+                      ,email: factory_name 
+                      ,alert_email: true 
+                      ,alert_line: true 
+                      ,create_by: factory_name 
+                   };
+
+factoryCoordinatorDataArray.push(factoryCoordinator);
+factoryCoordinatorDataArray.push(factoryCoordinator);
+factoryCoordinatorDataArray.push(factoryCoordinator);
+
+
+
+
+        let dataForSent = {
+              factory_form_id: 0
+            , factory_name: factory_name
+            , factory_number: factory_number
+            , factory_business: factory_business
+            , factory_fuel_type: factory_fuel_type
+            , factory_location_number: factory_location_number
+            , factory_location_moo: factory_location_moo
+            , factory_location_soi: factory_location_soi
+            , factory_location_road: factory_location_road
+            , factory_location_subdistrict: factory_location_subdistrict
+            , factory_location_district: factory_location_district
+            , factory_location_province: factory_location_province
+            , factory_location_zipcode: factory_location_zipcode
+            , factory_chimney_install: factory_chimney_install
+            , create_by: factory_name 
+            , factoryCoordinator: factoryCoordinatorDataArray
+            , factoryCEMInstall: factoryCEMInstallDataArray
+            , factoruMeasure: factoruMeasureDataArray
+        }
+
+
+        var objJsonData = JSON.stringify(dataForSent);
+        console.log(objJsonData);
+
+        $.ajax({
+            url: 'http://localhost:5000/FactoryFormController/InsertFactoryData',
+            method: "POST",
+            data: objJsonData,
+            dataType: 'json',
+            contentType: "application/json",
+            success: function (result) {
+                console.log(result);
+                console.log('success upload file');
+                return true;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(errorThrown);
+                return false;
+            }
+        });
+
+    }
+
+
+</script>
+
+}
