@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace elephantThai2
+namespace elephathai3
 {
     public class BundleConfig
     {

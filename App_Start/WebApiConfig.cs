@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace elephantThai2
+namespace elephathai3
 {
     public static class WebApiConfig
     {

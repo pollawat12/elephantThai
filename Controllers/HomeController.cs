@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace elephantThai2.Controllers
+namespace elephathai3.Controllers
 {
     public class HomeController : Controller
     {

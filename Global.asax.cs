@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace elephantThai2
+namespace elephathai3
 {
     public class MvcApplication : System.Web.HttpApplication
     {

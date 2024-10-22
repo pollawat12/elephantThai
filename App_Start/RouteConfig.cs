@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace elephantThai2
+namespace elephathai3
 {
     public class RouteConfig
     {
@@ -14,10 +14,10 @@ namespace elephantThai2
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+              name: "Default",
+              url: "{controller}/{action}/{id}",
+              defaults: new { controller = "LogIn", action = "Userlogin", id = UrlParameter.Optional }
+          );
         }
     }
 }

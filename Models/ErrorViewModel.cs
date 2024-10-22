@@ -1,6 +1,6 @@
 using System;
 
-namespace elephantThai2.Models
+namespace elephathai3.Models
 {
     public class ErrorViewModel
     {
