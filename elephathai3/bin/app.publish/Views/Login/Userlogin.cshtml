@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Login"]</h1>
+<section class="pt-5 vh-100">
+    <div style="padding-bottom: 30px !important;" class="container-fluid h-custom">
+        <p class="h3">ระบบจัดเก็บข้อมูลปางช้าง</p>
+        <div class="pt-2 row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                     class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form id="loginForm" onsubmit="return false;">
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="form-label" for="username">Username</label>
+                        <input type="email" id="username" class="form-control form-control-lg" placeholder="Enter Username" />
+                    </div>
+
+                    <!-- Password input -->
+                    <div data-mdb-input-init class="form-outline mb-3">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" class="form-control form-control-lg" placeholder="Enter password" />
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Checkbox -->
+                        <div class="form-check mb-0">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="rememberMe" />
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#!" class="text-body">Forgot password?</a>
+                    </div>
+
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button type="button" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="login()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 20px !important;" class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+        <div class="text-white mb-3 mb-md-0">Copyright © 2024. All rights reserved.</div>
+    </div>
+</section>
+
+<script>
+    function login() {
+        // Get the input values
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Validate input fields
+        if (!username || !password) {
+            alert("Please enter both username and password.");
+            return; // Exit the function if validation fails
+        }
+
+        // Example API URL (change this to your actual API endpoint)
+        const apiUrl = 'https://localhost:44348/LogIn/Login';
+
+        // Prepare the data to be sent
+        const data = {
+            username: username,
+            password: password,
+        };
+
+        // Make the API call
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Handle success
+            console.log('Success:', data);
+            // Redirect or show a success message
+        })
+        .catch((error) => {
+            // Handle error
+            console.error('Error:', error);
+            alert('Login failed! Please try again.');
+        });
+    }
+</script>
