@@ -1,6 +1,6 @@
 using System;
 
-namespace SbAdmin.Models
+namespace elephantThai2.Models
 {
     public class ErrorViewModel
     {
