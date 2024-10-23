@@ -3,20 +3,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="d-flex align-items-start">
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-  </div>
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-  </div>
-</div>
 
 <div class="row">
   <div class="col-3">
@@ -25,8 +11,7 @@
       class="nav flex-column nav-pills text-center"
       id="v-pills-tab"
       role="tablist"
-      aria-orientation="vertical"
-    >
+      aria-orientation="vertical">
       <a
         class="nav-link active"
         id="v-pills-link1-tab"
@@ -35,7 +20,7 @@
         role="tab"
         aria-controls="v-pills-link1"
         aria-selected="true"
-        >Link 1</a
+        >๑.องค์ประกอบปางช้าง</a
       >
       <a
         class="nav-link"
@@ -45,7 +30,7 @@
         role="tab"
         aria-controls="v-pills-link2"
         aria-selected="false"
-        >Link 2</a
+        >๒.การจัดการปางช้าง</a
       >
       <a
         class="nav-link"
@@ -55,7 +40,7 @@
         role="tab"
         aria-controls="v-pills-link3"
         aria-selected="false"
-        >Link 3</a
+        >๓.บุคลากร</a
       >
       <a
         class="nav-link"
@@ -65,7 +50,47 @@
         role="tab"
         aria-controls="v-pills-link4"
         aria-selected="false"
-        >Link 4</a
+        >๔. สุขภาพช้าง</a
+      >
+         <a
+        class="nav-link"
+        id="v-pills-link5-tab"
+        data-mdb-pill-init
+        href="#v-pills-link5"
+        role="tab"
+        aria-controls="v-pills-link5"
+        aria-selected="false"
+        >๕. สวัสดิภาพสัตว์</a
+      >
+         <a
+        class="nav-link"
+        id="v-pills-link6-tab"
+        data-mdb-pill-init
+        href="#v-pills-link6"
+        role="tab"
+        aria-controls="v-pills-link6"
+        aria-selected="false"
+        >๖. สิ่งแวดล้อม</a
+      >
+         <a
+        class="nav-link"
+        id="v-pills-link7-tab"
+        data-mdb-pill-init
+        href="#v-pills-link7"
+        role="tab"
+        aria-controls="v-pills-link7"
+        aria-selected="false"
+        >๗. การจัดการด้านความปลอดภัย</a
+      >
+         <a
+        class="nav-link"
+        id="v-pills-link8-tab"
+        data-mdb-pill-init
+        href="#v-pills-link8"
+        role="tab"
+        aria-controls="v-pills-link8"
+        aria-selected="false"
+        >๘. การบันทึกข้อมูล</a
       >
     </div>
     <!-- Tab navs -->
@@ -78,20 +103,179 @@
         class="tab-pane fade show active"
         id="v-pills-link1"
         role="tabpanel"
-        aria-labelledby="v-pills-link1-tab"
-      >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Corporis molestias porro, eius magnam provident eos!
+        aria-labelledby="v-pills-link1-tab">
+        <h3>๑.๑สถานที่ตั้ง</h3>
+          <div>
+            <p class="font-weight-bold">๑.๑.๑ ตั้งอยู่ในสภาพแวดล้อมที่ไม่เสี่ยงต่อการปนเปื้อนของอันตรายทางกายภาพ เคมี และชีวภาพที่มีผลกระทบต่อสุขภาพและสวัสดิภาพสัตว์หรือมีมาตรการป้องกันที่เหมาะสม</p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๑.๒ ตั้งอยู่ในทำเลที่มีน้ำสะอาด ใช้เพียงพอตลอดปี<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๑.๓ มีเส้นทางคมนาคม เข้าถึงปางช้าง ที่สามารถขนส่งช้าง อาหารสัตว์ เวชภัณฑ์และอุปกรณ์ต่างๆ</p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๑.๔ พื้นที่ที่ไม่ส่งผลกระทบต่อป่าต้นน้ำ<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๒.๑ มีขนาดพื้นที่ของปางช้าง ที่เหมาะสม กับลักษณะกิจกรรมและจำนวนช้าง ตามประเภทของปางช้างและกายภาพทางพื้นที่ของปางช้างโดย<span style="color:red">*(เลือกอย่างน้อย 1 หัวข้อ)</span></p>
+                <p class="font-weight-bold">ประเภทของปางช้างตามกิจกรรมได้แก่</p>
+              <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    ปางช้างแบบดั้งเดิม
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   ปางช้างแบบท่องเที่ยวเชิงนิเวศ
+  </label>
+</div>
+               <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+  <label class="form-check-label" for="flexRadioDefault3">
+   ปางช้างพิการหรือชรา
+  </label>
+</div>
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+  <label class="form-check-label" for="flexRadioDefault4">
+   ปางช้างแบบผสมผสาน
+  </label>
+</div>
+                <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+               
+          <br/>
+                <p class="font-weight-bold">ประเภทปางช้างตามจำนวนช้าง</p>
+              <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
+  <label class="form-check-label" for="flexRadioDefault5">
+    ปางช้างขนาดเล็กไม่เกิน ๑๐ เชือก
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6" checked>
+  <label class="form-check-label" for="flexRadioDefault6">
+   ปางช้างขนาดกลางไม่เกิน ๑๑-๓๐ เชือก
+  </label>
+</div>
+               <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault7" checked>
+  <label class="form-check-label" for="flexRadioDefault7">
+   ปางช้างขนาดใหญ่ตั้งแต่ ๓๑ เชือก ขึ้นไป
+  </label>
+</div>
+                <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+          <div>
+            <p class="font-weight-bold">มีการวางผังปางช้างที่เอื้อต่อการปฏิบัติงานที่ถูกสุขลักษณะ<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+          <div>
+            <p class="font-weight-bold">๑.๒.๓ แยกพื้นที่ปฏิบัติงานเป็นสัดส่วน (๑)สถานที่พักช้าง <span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๒.๓ แยกพื้นที่ปฏิบัติงานเป็นสัดส่วน (๒)พื้นที่พักผ่อนสำหรับช้าง <span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๒.๓ แยกพื้นที่ปฏิบัติงานเป็นสัดส่วน (๓)พื้นที่เก็บอาหาร <span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๒.๓ แยกพื้นที่ปฏิบัติงานเป็นสัดส่วน (๔)พื้นที่เก็บอุปกรณ์ <span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+          <div>
+            <p class="font-weight-bold">๑.๒.๓ แยกพื้นที่ปฏิบัติงานเป็นสัดส่วน (๕)พื้นที่รวบรวมขยะและมูลช้าง<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+          <div>
+            <p class="font-weight-bold">๑.๓สถานที่พักช้างและพื้นที่พักผ่อนสำหรับช้าง</p>
+          </div>
+          <hr class="hr" />
+           <div>
+            <p class="font-weight-bold">๑.๓.๑ มีสถานที่พักช้างเพื่อรอให้บริการหรือพักจากการบริการ<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
+            <div>
+            <p class="font-weight-bold">๑.๓.๒ มีพื้นที่พักผ่อนสำหรับช้างเพื่อใช้พักผ่อน ในช่วงที่ไม่มีงานบริการหรือช่วงกลางคืน<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
       </div>
       <div
         class="tab-pane fade"
         id="v-pills-link2"
         role="tabpanel"
-        aria-labelledby="v-pills-link2-tab"
-      >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Est, excepturi illo neque eaque error corrupti laborum alias
-        veniam natus molestias in cupiditate magnam ratione voluptatem!
+        aria-labelledby="v-pills-link2-tab">
+         <div>
+                 <h3>๒.๒ การจัดการอาหารและน้ำ</h3>
+            <p class="font-weight-bold">๒.๒.๑ ให้ช้างได้รับอาหารที่มีคุณภาพปลอดภัยและเหมาะสมสำหรับการเลี้ยงช้างโดยเป็นไปตาม พระราชบัญญัติควบคุมคุณภาพอาหารสัตว์ พ.ศ.๒๕๕๘<span style="color:red">*</span></p>
+              
+              <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple />
+              <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+          </div>
+          <hr class="hr" />
       </div>
       <div
         class="tab-pane fade"
@@ -106,8 +290,39 @@
         class="tab-pane fade"
         id="v-pills-link4"
         role="tabpanel"
-        aria-labelledby="v-pills-link4-tab"
-      >
+        aria-labelledby="v-pills-link4-tab">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Sequi quasi dicta qui porro eligendi nam doloribus vel minus ullam quam!
+      </div>
+        <div
+        class="tab-pane fade"
+        id="v-pills-link5"
+        role="tabpanel"
+        aria-labelledby="v-pills-link5-tab">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Sequi quasi dicta qui porro eligendi nam doloribus vel minus ullam quam!
+      </div>
+        <div
+        class="tab-pane fade"
+        id="v-pills-link6"
+        role="tabpanel"
+        aria-labelledby="v-pills-link6-tab">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Sequi quasi dicta qui porro eligendi nam doloribus vel minus ullam quam!
+      </div>
+        <div
+        class="tab-pane fade"
+        id="v-pills-link7"
+        role="tabpanel"
+        aria-labelledby="v-pills-link7-tab">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Sequi quasi dicta qui porro eligendi nam doloribus vel minus ullam quam!
+      </div>
+        <div
+        class="tab-pane fade"
+        id="v-pills-link8"
+        role="tabpanel"
+        aria-labelledby="v-pills-link8-tab">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Sequi quasi dicta qui porro eligendi nam doloribus vel minus ullam quam!
       </div>
