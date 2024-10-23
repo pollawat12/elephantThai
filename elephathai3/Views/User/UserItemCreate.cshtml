@@ -4,17 +4,38 @@
 }
 
 <h1>@ViewData["UserItemCreate"]</h1>
-<section class="pt-5 vh-100">
-    <div style="padding-bottom: 30px !important;" class="container-fluid h-custom">
-        <p class="h3">ระบบจัดเก็บข้อมูลปางช้าง</p>
-        <div class="pt-2 row d-flex justify-content-center align-items-center h-100">
-      
-        </div>
-    </div>
-    <div style="padding-top: 20px !important;" class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-        <div class="text-white mb-3 mb-md-0">Copyright © 2024. All rights reserved.</div>
-    </div>
-</section>
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>กรอกข้อความที่ต้องการตามหัวข้อข้อมูลปางช้าง</p>
+                        <input type="submit" name="" value="ย้อนกลับ"/><br/>
+                    </div>
+                    <div class="col-md-9 register-right">
+                      
+                                <h3 class="register-heading">เพิ่มข้อมูลปางช้าง</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                            <input type="text" class="mt-2 form-control" placeholder="หัวข้อข้อมูลปางช้าง *" value="" />
+                                      
+                                         <input id="startDate" class="mt-2 form-control" type="date" placeholder="วันที่ *" />
+            <span id="startDateSelected"></span>
+                                        <hr class="hr" />
+                                        <label for="formFileMultiple" class="form-label">เลือกภาพถ่ายที่ต้องการ</label>
+<input class="form-control" type="file" id="formFileMultiple" multiple />
+                                            <input type="text" class="mt-2 form-control" placeholder="ข้อความอธิบายภาพถ่าย" value="" />
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                       
+                                        <input type="submit" class="btnRegister"  value="เริ่มสร้างข้อมูลปางช้าง"/>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
+            </div>
 
 <script>
 
