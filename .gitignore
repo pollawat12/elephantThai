@@ -3,7 +3,7 @@
 *.user
 *.suo
 *.csproj.user
-
+*.vs
 # Ignore compiled binaries
 *.dll
 *.pdb
@@ -11,7 +11,7 @@
 # Ignore build output directories
 bin/
 obj/
-
+.vs/
 # Ignore caches and temporary files
 *.cache
 *.zip
