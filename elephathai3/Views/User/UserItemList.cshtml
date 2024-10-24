@@ -2,75 +2,124 @@
     ViewData["Title"] = "UserItemList";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<!-- Page Heading -->
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Home</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-        <i class="fas fa-download fa-sm text-white-50"></i> Generate Reportx
-    </a>
+<div class="d-flex justify-content-between">
+    <div></div>
+    <div>
+        <button type="button" class="btn btn-primary btn-rounded" data-mdb-ripple-init>เพิ่มข้อมูลปางช้าง</button>
+        </div>
 </div>
-
-<!-- Content Row -->
-<div class="row">
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-uppercase mb-1">
-                            ข้อมูลปางช้าง
-                        </div>
-                        <button type="button" class="btn btn-primary">จัดการข้อมูลปางช้าง</button>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
+<div>
+    <table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Position</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+              alt=""
+              style="width: 45px; height: 45px"
+              class="rounded-circle"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1">John Doe</p>
+            <p class="text-muted mb-0">john.doe@gmail.com</p>
+          </div>
         </div>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-uppercase mb-1">
-                            คู่มือการจัดการปางช้าง
-                        </div>
-                        <button type="button" class="btn btn-primary">จัดการคู่มือ</button>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-newspaper fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1">Software engineer</p>
+        <p class="text-muted mb-0">IT department</p>
+      </td>
+      <td>
+        <span class="badge badge-success rounded-pill d-inline">Active</span>
+      </td>
+      <td>Senior</td>
+      <td>
+        <button type="button" class="btn btn-link btn-sm btn-rounded">
+          Edit
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+              class="rounded-circle"
+              alt=""
+              style="width: 45px; height: 45px"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Alex Ray</p>
+            <p class="text-muted mb-0">alex.ray@gmail.com</p>
+          </div>
         </div>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-info shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-uppercase mb-1">
-                            แบบฟอร์ม
-                        </div>
-                        <button type="button" class="btn btn-primary">จัดการแบบฟอร์ม</button>
-
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-solid fa-file-contract fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1">Consultant</p>
+        <p class="text-muted mb-0">Finance</p>
+      </td>
+      <td>
+        <span class="badge badge-primary rounded-pill d-inline"
+              >Onboarding</span
+          >
+      </td>
+      <td>Junior</td>
+      <td>
+        <button
+                type="button"
+                class="btn btn-link btn-rounded btn-sm fw-bold"
+                data-mdb-ripple-color="dark"
+                >
+          Edit
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+              class="rounded-circle"
+              alt=""
+              style="width: 45px; height: 45px"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Kate Hunington</p>
+            <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+          </div>
         </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1">Designer</p>
+        <p class="text-muted mb-0">UI/UX</p>
+      </td>
+      <td>
+        <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+      </td>
+      <td>Senior</td>
+      <td>
+        <button
+                type="button"
+                class="btn btn-link btn-rounded btn-sm fw-bold"
+                data-mdb-ripple-color="dark"
+                >
+          Edit
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
     </div>
-
 
 <script>
 </script>
