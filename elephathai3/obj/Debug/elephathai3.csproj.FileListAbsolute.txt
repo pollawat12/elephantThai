@@ -163,8 +163,8 @@ C:\elephent\elephantThai\elephathai3\bin\System.Net.Http.Formatting.xml
 C:\elephent\elephantThai\elephathai3\bin\System.Web.Http.xml
 C:\elephent\elephantThai\elephathai3\bin\System.Web.Http.WebHost.xml
 C:\elephent\elephantThai\elephathai3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\elephent\elephantThai\elephathai3\obj\Debug\elephathai3.csprojAssemblyReference.cache
 C:\elephent\elephantThai\elephathai3\obj\Debug\elephathai3.csproj.CoreCompileInputs.cache
 C:\elephent\elephantThai\elephathai3\obj\Debug\elephathai3.csproj.CopyComplete
 C:\elephent\elephantThai\elephathai3\obj\Debug\elephathai3.dll
 C:\elephent\elephantThai\elephathai3\obj\Debug\elephathai3.pdb
+C:\elephent\elephantThai\elephathai3\obj\Debug\elephathai3.csprojAssemblyReference.cache

@@ -1,0 +1,20 @@
+# Ignore Visual Studio temporary files, build results, and
+# Ignore user-specific and IDE-specific files
+*.user
+*.suo
+*.csproj.user
+
+# Ignore compiled binaries
+*.dll
+*.pdb
+
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore caches and temporary files
+*.cache
+*.zip
+
+# Ignore publish output
+app.publish/
